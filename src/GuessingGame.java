@@ -11,11 +11,14 @@ public class GuessingGame {
 		System.out.println("Pick a number between 1 and 10:");
 		int guessNumber = input.nextInt();
 		
+		String result;
 		if(secretNumber==guessNumber) {
-			System.out.println("You win!");
+			result = "You won!";
 		} else {
-			System.out.println("Sorry. You LOSE.");
+			result = "You lost!";
 		}
+		
+		System.out.println(result);
 		
 		input.close();
 
